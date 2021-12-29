@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+:root{
+    --Dark-Blue: hsl(240, 38%, 20%);
+ --Grayish-Blue: hsl(240, 18%, 77%);
+}
+*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-image: url(./images/pattern-curve.svg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+       
+      
+}
+.text-bold{
+    font-weight: 700;
+    color: var(--Dark-Blue);
+    font-size: 1rem;
+}
+.text-light{
+    font-weight: 500;
+    color: var(--Grayish-Blue);
+    font-size: 0.9rem;
+}
+.container{
+    width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 0 auto;
+
+}
+.hidden{
+    display: none;
+}
+ .testimonial-profile{
+    background-image:url("./images/pattern-bg.svg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    width: 100%;
+    max-width: 350px;
+    
+}
+.testimonial-profile-img img{
+    width:80%;
+    max-width: 250px;
+    height: auto;
+    margin-top:42px;
+    margin-left:80px;
+    
+  }
+  .controllers{
+    width: 10%;
+      background:#fff;
+      box-shadow: 4px 5px 8px 9px rgba(111, 111, 111, 0.2);
+      padding: 0.4em;
+      border-radius: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: -25px;
+      left: 48%;
+      z-index: 8;
+      position: absolute;
+
+    }
+    button{
+        border: 1px solid #fff;
+        background-color: #fff;
+        cursor: pointer;
+        transition: all ease 0.2s;
+    }
+    .quote img{
+        width: 50px;
+        height: 50px;
+    }
+    .testimonial-footer{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .testimonial{
+        width: 80%;
+        color: var(--Dark-Blue);
+        font-weight: 300;
+        font-size: 1rem;
+        margin-top: -40px;
+        text-align: center;
+    }
+    .profile-info{
+        margin-bottom: 80px;
+        line-height:0.5em;
+        text-align: center;
+    }
+ 
+    @media(min-width:40em){
+        .container{
+            flex-direction: row;
+            max-width: 100%;
+            min-height: 80vh;
+        }
+        .testimonial-profile{
+            width: 100%;
+        }
+        .controllers{
+            width:10%;
+            padding: 1em;
+            left: 50%;
+            margin-top: -30px;
+        }
+      
+        .quote img{
+            width: 40px;
+            height: 40px;
+            margin-right: 300px;
+            margin-bottom: -120px;
+        }
+        
+        .testimonial-footer{
+            margin-top: 0px;
+            position: absolute;
+            top:10%;
+            right: 44%;
+        }
+        .testimonial{
+            width: 85%;
+            margin-top: 100px;
+            text-align: left;
+            font-size: 1rem;
+        }
+        .profile-info{
+            display: flex;
+            gap: 1em;
+            line-height: 1em;
+        
+            margin-top: 10px;
+            margin-left: 38px;
+            margin-bottom: 0px;
+        }
+        .testimonial-profile{
+            max-width: 50%;
+            margin-left: 200px;
+        }
+        .testimonial-profile-img img{
+            max-width: 100%;
+            margin-top:42px;
+            margin-left:20px;
+            
+          }
+    }
+    @media (min-width:50em){
+        .container{
+            flex-direction: row;
+            max-width: 100%;
+            min-height: 80vh;
+        }
+        .testimonial-profile{
+            width: 100%;
+        }
+        .controllers{
+            width: 5%;
+            padding: 1em;
+            left: 60%;
+            margin-top: -30px;
+        }
+      
+        .quote img{
+            width: 40px;
+            height: 40px;
+            margin-right: 300px;
+            margin-bottom: -120px;
+        }
+        .testimonial-content{
+         
+            margin-left: 9px;
+        }
+      
+        .testimonial{
+            width: 100%;
+            max-width: 500px;
+            text-align: left;
+            font-size: 1.5rem;
+            margin-right: 200px;
+        }
+        .profile-info{
+            display: flex;
+            gap: 1em;
+            width: 40%;
+            margin-top: 10px;
+            margin-left: 38px;
+            margin-bottom: 0px;
+        }
+        .testimonial-profile{
+            max-width: 40%;
+            margin-right: -300px;
+        }
+        .testimonial-profile-img img{
+            max-width: 100%;
+            margin-top:42px;
+            margin-left:20px;
+            
+          }
+    }
+    
